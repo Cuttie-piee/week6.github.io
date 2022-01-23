@@ -1,0 +1,41 @@
+.gallery{
+    margin: 10px 50px;
+}
+.gallery img{
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+.gallery img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+.open{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.open img{
+    width: 500px;
+    max-width: 500px;
+    object-fit: contain;
+}
+.open span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+
+}
+h1{
+    text-align: center;
+}
